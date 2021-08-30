@@ -12,7 +12,7 @@ searchTeam()
 const displaySearchResult = teams => {
     // console.log(teams)
     const serachResult = document.getElementById('search-result')
-    serachResult.textContent = ''
+    // serachResult.textContent = ''
     teams.forEach(team => {
         // console.log(team)
         const div = document.createElement('div');
@@ -38,7 +38,8 @@ const loadTeamDetails = teamId => {
 }
 const displayTeamDetails = team => {
     console.log(team)
-    const teamDetails = document.getElementById('team-details')
+    const teamDetails = document.getElementById('team-details');
+    teamDetails.textContent = '';
     const div = document.createElement('div');
     div.classList.add('card');
     div.innerHTML = `
